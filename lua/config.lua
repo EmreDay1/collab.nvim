@@ -141,8 +141,14 @@ function M.get_plugin_root()
   local current_file = debug.getinfo(1, "S").source:sub(2)
   local config_dir = vim.fn.fnamemodify(current_file, ":p:h")
   
-  -- Go up from lua/collab/ to plugin root
-  local plugin_root = vim.fn.fnamemodify(config_dir, ":h:h")
+  -- Go up from lua/ to plugin root (config.lua is in lua/ directory)
+  local plugin_root = vim.fn.fnamemodify(config_dir, ":h")
+  
+  if M.opts and M.opts.debug then
+    print("config.lua path: " .. current_file)
+    print("config dir: " .. config_dir)  
+    print("plugin root: " .. plugin_root)
+  end
   
   return plugin_root
 end
