@@ -3,4 +3,4 @@
 
 If you want to contribute to the plugin please contact me @ emreday01@gmail.com or send in a pull request
 
-# INFO: DEAR VISITOR, DEVELOPMENT WILL RESUME ON JUNE 29
+# INFO: DEAR VISITOR, DEVELOPMENT WILL RESUME ON AUGUST 1
